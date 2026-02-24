@@ -71,13 +71,18 @@
             background-position: 200%;
         }
     }
-    --animate-blink-cursor: blink-cursor 1.2s step-end infinite
-;
-  @keyframes blink-cursor {
-  0%, 49% {
-    opacity: 1;}
-  50%, 100% {
-    opacity: 0;}}}
+    --animate-blink-cursor: blink-cursor 1.2s step-end infinite;
+    @keyframes blink-cursor {
+        0%,
+        49% {
+            opacity: 1;
+        }
+        50%,
+        100% {
+            opacity: 0;
+        }
+    }
+}
 
 html {
     scroll-behavior: smooth;
@@ -123,11 +128,13 @@ html {
     --color-5: oklch(63.57% 0.19546 261.486);
 }
 
+body {
+    background-color: var(--background);
+    color: var(--foreground);
+}
+
 @layer base {
     * {
         @apply border-border outline-ring/50;
-    }
-    body {
-        @apply bg-background text-foreground;
     }
 }
