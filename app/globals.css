@@ -90,11 +90,11 @@ html {
 
 :root {
     --radius: 0.625rem;
-    --background: #02000f;
+    --background: oklch(8.452% 0.04951 284.688);
     --foreground: oklch(0.985 0 0);
     --card: oklch(0.205 0 0);
     --card-foreground: oklch(0.985 0 0);
-    --popover: oklch(0.205 0 0);
+    --popover: oklch(8.452% 0.04951 284.688);
     --popover-foreground: oklch(0.985 0 0);
     --primary: oklch(0.922 0 0);
     --primary-foreground: oklch(0.205 0 0);

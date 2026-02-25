@@ -3,20 +3,23 @@ import Image from "next/image";
 
 export const About = () => {
     return (
-        <section className="relative scroll-mt-16 p-5" id="about">
-            <div className="h-96 w-96 absolute bg-purple-500/20 rounded-full blur-[150px] -right-20 bottom-10" />
+        <section
+            className="relative md:scroll-mt-16 scroll-mt-12 p-5 md:text-lg text-sm"
+            id="about"
+        >
+            <div className="md:h-96 md:w-96 h-60 w-60 absolute bg-purple-500/20 rounded-full blur-[150px] md:-right-20 right-10 bottom-10" />
             <div className="h-12 w-32 absolute bg-teal-500/80 rounded-full blur-[80px] right-100 bottom-25" />
-            <div className="h-96 w-96 absolute bg-pink-500/20 rounded-full blur-[150px] -bottom-30" />
-            <div className="h-96 w-96 absolute bg-blue-500/20 rounded-full blur-[150px] top-20 right-96" />
+            <div className="md:h-96 md:w-96 h-60 w-60 absolute bg-pink-500/20 rounded-full blur-[150px] -bottom-30" />
+            <div className="md:h-96 md:w-96 h-60 w-60 absolute bg-blue-500/20 rounded-full blur-[150px] top-20 right-96" />
             <Sparkle className="absolute bottom-40 left-15 opacity-20 hover:opacity-40 transition" />
             <Sparkle className="absolute bottom-60 right-15 opacity-20 hover:opacity-40 transition" />
             <div className="flex items-center gap-5">
                 <h2 className="text-4xl font-semibold">About</h2>
                 <div className="grow border-t border-white" />
             </div>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-10 max-w-7xl mx-auto justify-items-end">
+            <div className="grid grid-cols-1 md:grid-cols-2 md:gap-10 max-w-7xl mx-auto md:justify-items-end">
                 <div className="flex flex-col gap-5">
-                    <div className="space-y-8 max-w-2xl py-10 text-lg">
+                    <div className="md:space-y-8 space-y-4 md:max-w-2xl md:py-10 py-5">
                         <p>
                             I’m a frontend developer specialized in building
                             modern, scalable web applications using React and
@@ -39,8 +42,8 @@ export const About = () => {
                             applications I build.
                         </p>
                     </div>
-                    <div className="grid grid-cols-2 gap-5 max-w-xl">
-                        <div className="flex gap-5 items-center">
+                    <div className="grid grid-cols-2 md:gap-5 md:max-w-xl">
+                        <div className="flex md:gap-5 gap-2 items-center">
                             <Image
                                 src="/paw.png"
                                 alt="Paw"
@@ -49,7 +52,7 @@ export const About = () => {
                             />
                             <p>User-focused feature development</p>
                         </div>
-                        <div className="flex gap-5 items-center">
+                        <div className="flex md:gap-5 gap-2 items-center">
                             <Image
                                 src="/paw.png"
                                 alt="Paw"
@@ -58,7 +61,7 @@ export const About = () => {
                             />
                             <p>Scalable component architecture</p>
                         </div>
-                        <div className="flex gap-5 items-center">
+                        <div className="flex md:gap-5 gap-2 items-center">
                             <Image
                                 src="/paw.png"
                                 alt="Paw"
@@ -67,7 +70,7 @@ export const About = () => {
                             />
                             <p>Clean and maintainable code</p>
                         </div>
-                        <div className="flex gap-5 items-center">
+                        <div className="flex md:gap-5 gap-2 items-center">
                             <Image
                                 src="/paw.png"
                                 alt="Paw"
