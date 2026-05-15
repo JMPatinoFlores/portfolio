@@ -51,7 +51,7 @@ export const projects: ProjectProps[] = [
                 label: "Dnd kit",
             },
         ],
-        repo: "#",
+        link: "https://www.meteorcloud.net/",
         image: "/meteorcloud.png",
     },
     {

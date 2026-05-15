@@ -4,7 +4,7 @@ export interface ProjectProps {
     title: string;
     description: string;
     tools: ToolProps[];
-    repo: string;
+    repo?: string;
     link?: string;
     image?: string;
 }

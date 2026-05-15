@@ -6,6 +6,7 @@ import {
     PopoverContent,
     PopoverTrigger,
 } from "@/components/ui/popover";
+import { cn } from "@/lib/utils";
 import { Code, Folder, IdCard, Mail } from "lucide-react";
 import Link from "next/link";
 import { useEffect, useState } from "react";
@@ -40,15 +41,10 @@ export const Navbar = () => {
             link: "#about",
             icon: IdCard,
         },
-        {
-            label: "Contact",
-            link: "#contact",
-            icon: Mail,
-        },
     ];
 
     return (
-        <nav className="flex justify-between md:h-16 h-12 items-center md:px-20 px-5 font-semibold text-gray-300 bg-white/5 backdrop-blur-md fixed top-0 right-0 left-0 z-20">
+        <nav className="fixed top-10 inset-x-0 z-50 max-w-fit mx-auto">
             <Popover>
                 <PopoverTrigger asChild>
                     <Button
@@ -96,34 +92,79 @@ export const Navbar = () => {
                     </ul>
                 </PopoverContent>
             </Popover>
-            <Link
-                href="#hero"
-                className="transition-colors duration-500 drop-shadow-xl text-muted-foreground hover:drop-shadow-white hover:text-white"
-            >
-                JessiOwe
-            </Link>
-            <ul className="md:flex gap-5 hidden">
-                {navLinks.map((link) => {
-                    const isActive = hash === link.link;
-                    return (
-                        <li
-                            key={link.label}
-                            className={`transition-colors duration-500 drop-shadow-xl ${
-                                isActive
-                                    ? "text-white drop-shadow-xl drop-shadow-white"
-                                    : "text-muted-foreground hover:drop-shadow-white hover:text-white"
-                            }`}
+            <div className="rounded-full border border-white/10 bg-background/50 px-2 py-1.5 backdrop-blur-md shadow-lg shadow-white/10">
+                <ul className="md:flex items-center gap-2 hidden">
+                    {navLinks.map((link) => {
+                        return (
+                            <li key={link.label} className="flex items-center">
+                                <Link
+                                    href={link.link}
+                                    onClick={() => setHash(link.link)}
+                                    className={cn(
+                                        "flex items-center gap-2 relative rounded-full px-4 py-1.5 text-sm font-medium transition-all duration-500",
+
+                                        // línea inferior
+                                        "before:absolute before:left-1/2 before:bottom-px",
+                                        "before:h-px before:w-0 before:-translate-x-1/2",
+                                        "before:rounded-full",
+                                        "before:opacity-80",
+                                        "before:bg-[linear-gradient(90deg,transparent,var(--color-1),var(--color-5),var(--color-3),transparent)]",
+                                        "before:blur-[0.5px]",
+                                        "before:transition-all before:duration-300",
+                                        "hover:before:w-3/4",
+
+                                        // glow
+                                        "after:absolute after:left-1/2 after:-bottom-1.5",
+                                        "after:h-4 after:w-0 after:-translate-x-1/2",
+                                        "after:rounded-full",
+                                        "after:bg-[linear-gradient(90deg,var(--color-1),var(--color-5),var(--color-3),var(--color-4),var(--color-2))]",
+                                        "after:blur-md after:opacity-0",
+                                        "after:transition-all after:duration-300",
+
+                                        "hover:after:w-3/4 hover:after:opacity-100",
+
+                                        // animación rainbow
+                                        "hover:bg-size-[200%]",
+                                        "after:bg-size-[200%]",
+                                        "hover:animate-rainbow",
+                                        "after:animate-rainbow",
+                                    )}
+                                >
+                                    <link.icon className="size-4" />{" "}
+                                    {link.label}
+                                </Link>
+                            </li>
+                        );
+                    })}
+                    <div className="w-px h-4 bg-white/20 mx-2" />
+                    <li className="flex items-center">
+                        <Link
+                            href="#contact"
+                            className={cn(
+                                "flex items-center gap-2 relative rounded-full px-4 py-1.5 text-sm font-medium transition-all duration-500 text-background bg-white",
+
+                                // glow
+                                "after:absolute after:left-1/2 after:-bottom-1.5",
+                                "after:h-4 after:w-0 after:-translate-x-1/2",
+                                "after:rounded-full",
+                                "after:bg-[linear-gradient(90deg,var(--color-1),var(--color-5),var(--color-3),var(--color-4),var(--color-2))]",
+                                "after:blur-md after:opacity-0",
+                                "after:transition-all after:duration-300",
+
+                                "hover:after:w-3/4 hover:after:opacity-100",
+
+                                // animación rainbow
+                                "hover:bg-size-[200%]",
+                                "after:bg-size-[200%]",
+                                "hover:animate-rainbow",
+                                "after:animate-rainbow",
+                            )}
                         >
-                            <Link
-                                href={link.link}
-                                onClick={() => setHash(link.link)}
-                            >
-                                {link.label}
-                            </Link>
-                        </li>
-                    );
-                })}
-            </ul>
+                            <Mail className="size-4" /> Contact
+                        </Link>
+                    </li>
+                </ul>
+            </div>
         </nav>
     );
 };

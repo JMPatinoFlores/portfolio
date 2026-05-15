@@ -42,19 +42,21 @@ export const ProjectCard = ({ project }: { project: ProjectProps }) => {
                 </div>
                 <hr className="mt-auto" />
                 <div className="flex items-center md:gap-5 gap-2">
-                    <Link
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        href={project.repo}
-                        className="w-full border border-white md:text-lg flex items-center justify-center rounded-lg md:py-2 py-1 gap-2 hover:bg-white/5 transition-colors"
-                    >
-                        <Github className="size-4 md:size-5" /> Code
-                    </Link>
+                    {project.repo && (
+                        <Link
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            href={project.repo}
+                            className="w-full border border-white md:text-lg flex items-center justify-center rounded-lg md:py-2 py-1 gap-2 hover:bg-white/5 transition-colors"
+                        >
+                            <Github className="size-4 md:size-5" /> Code
+                        </Link>
+                    )}
                     {project.link && (
                         <Link
                             target="_blank"
                             rel="noopener noreferrer"
-                            href={project.link || "#"}
+                            href={project.link}
                             className="w-full border border-white md:text-lg flex items-center justify-center rounded-lg md:py-2 py-1 gap-2 hover:bg-white/5 transition-colors"
                         >
                             <LinkIcon className="size-4 md:size-5" /> Live
