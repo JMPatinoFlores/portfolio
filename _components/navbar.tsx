@@ -7,25 +7,16 @@ import {
     PopoverTrigger,
 } from "@/components/ui/popover";
 import { cn } from "@/lib/utils";
-import { Code, Folder, IdCard, Mail } from "lucide-react";
+import { Code, Folder, Home, IdCard, Mail } from "lucide-react";
 import Link from "next/link";
-import { useEffect, useState } from "react";
 
 export const Navbar = () => {
-    const [hash, setHash] = useState("");
-
-    useEffect(() => {
-        const handleHash = () => {
-            setHash(window.location.hash);
-        };
-
-        handleHash();
-
-        window.addEventListener("hashchange", handleHash);
-        return () => window.removeEventListener("hashchange", handleHash);
-    }, []);
-
     const navLinks = [
+        {
+            label: "Home",
+            link: "#",
+            icon: Home,
+        },
         {
             label: "Skills",
             link: "#skills",
@@ -99,7 +90,6 @@ export const Navbar = () => {
                             <li key={link.label} className="flex items-center">
                                 <Link
                                     href={link.link}
-                                    onClick={() => setHash(link.link)}
                                     className={cn(
                                         "flex items-center gap-2 relative rounded-full px-4 py-1.5 text-sm font-medium transition-all duration-500",
 
@@ -115,7 +105,7 @@ export const Navbar = () => {
 
                                         // glow
                                         "after:absolute after:left-1/2 after:-bottom-1.5",
-                                        "after:h-4 after:w-0 after:-translate-x-1/2",
+                                        "after:h-2 after:w-0 after:-translate-x-1/2",
                                         "after:rounded-full",
                                         "after:bg-[linear-gradient(90deg,var(--color-1),var(--color-5),var(--color-3),var(--color-4),var(--color-2))]",
                                         "after:blur-md after:opacity-0",
@@ -145,7 +135,7 @@ export const Navbar = () => {
 
                                 // glow
                                 "after:absolute after:left-1/2 after:-bottom-1.5",
-                                "after:h-4 after:w-0 after:-translate-x-1/2",
+                                "after:h-2 after:w-0 after:-translate-x-1/2",
                                 "after:rounded-full",
                                 "after:bg-[linear-gradient(90deg,var(--color-1),var(--color-5),var(--color-3),var(--color-4),var(--color-2))]",
                                 "after:blur-md after:opacity-0",

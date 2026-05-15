@@ -1,6 +1,6 @@
 import { RainbowButton } from "@/components/ui/rainbow-button";
 import { TypingAnimation } from "@/components/ui/typing-animation";
-import { Github, Sparkle } from "lucide-react";
+import { Download, Github, Sparkle } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -55,7 +55,7 @@ export const Hero = () => {
                     </RainbowButton>
                     <RainbowButton asChild variant="outline" size="lg">
                         <Link href="https://github.com/JMPatinoFlores/">
-                            <Github /> Github
+                            Resume <Download />
                         </Link>
                     </RainbowButton>
                 </div>
