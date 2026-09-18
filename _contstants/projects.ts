@@ -53,7 +53,7 @@ export const projects: ProjectProps[] = [
         image: "/meteorcloud.png",
     },
     {
-        key: "vitalPet",
+        key: "galoo",
         tools: [
             {
                 icon: Layers,
@@ -80,8 +80,7 @@ export const projects: ProjectProps[] = [
                 label: "Express.js",
             },
         ],
-        repo: "#",
-        link: "#",
+        link: "https://www.galoo.pet/",
         image: "/vitalpet.png",
     },
     {
@@ -108,8 +107,7 @@ export const projects: ProjectProps[] = [
                 label: "Nest.js",
             },
         ],
-        repo: "#",
-        link: "https://rutaviajera.vercel.app/",
+        repo: "https://github.com/JMPatinoFlores/PM4FE-JMPatinoFlores",
         image: "/rutaviajera.png",
     },
     {
@@ -136,7 +134,6 @@ export const projects: ProjectProps[] = [
                 label: "Express.js",
             },
         ],
-        repo: "#",
         link: "https://trendy-treasures-ec.vercel.app/",
         image: "/trendytreasures.png",
     },
@@ -156,8 +153,8 @@ export const projects: ProjectProps[] = [
                 label: "TailwindCSS",
             },
         ],
-        repo: "#",
-        link: "https://www.jywebstudio.com/",
+        repo: "https://github.com/JMPatinoFlores/jywebstudio",
+        link: "https://jywebstudio.vercel.app/",
         image: "/jywebstudio.png",
     },
 ];

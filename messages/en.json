@@ -71,9 +71,9 @@
         "title": "MeteorCloud",
         "description": "Frontend development for a production multi-tenant ERP/CRM system used in production by a distribution company. Implemented complex data tables, role-based views, dashboards with analytics, and full CRUD workflows. Built with Next.js and TypeScript, integrating with backend services written in Go."
       },
-      "vitalPet": {
-        "title": "VitalPet",
-        "description": "Full-stack veterinary management system with role-based access, appointment scheduling, and medical records. Developed using Next.js, Express, and AWS S3, focusing on scalable frontend architecture and real-world application patterns."
+      "galoo": {
+        "title": "Galoo",
+        "description": "Full-stack veterinary management platform with multi-tenant architecture, strict role-based access, appointment scheduling, WhatsApp reminders, and a public digital pet ID. Built with Next.js, Express, and AWS S3, backed by a 100+ automated test suite ensuring system stability and tenant data isolation."
       },
       "rutaViajera": {
         "title": "Ruta Viajera",
