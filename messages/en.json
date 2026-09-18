@@ -4,17 +4,19 @@
     "skills": "Skills",
     "projects": "Projects",
     "about": "About",
-    "contact": "Contact"
+    "contact": "Contact",
+    "language": "Language:"
   },
   "Hero": {
-    "signature": "// Jessica Patiño",
+    "signature": "Hello! I'm Jessi",
     "title": "Frontend Developer",
     "tagline": "Building interfaces after dark",
     "description": "Specialized in React and Next.js, building scalable and production-ready applications.",
     "viewProjects": "View Projects",
     "resume": "Resume",
     "availability": "Available for remote work • Mexico",
-    "planetAlt": "Planet"
+    "planetAlt": "Planet",
+    "photoAlt": "Jessica Patiño"
   },
   "Skills": {
     "title": "Skills",

@@ -4,17 +4,19 @@
     "skills": "Habilidades",
     "projects": "Proyectos",
     "about": "Sobre mí",
-    "contact": "Contacto"
+    "contact": "Contacto",
+    "language": "Idioma:"
   },
   "Hero": {
-    "signature": "// Jessica Patiño",
+    "signature": "¡Hola! Soy Jessi",
     "title": "Desarrolladora Frontend",
     "tagline": "Construyendo interfaces cuando cae la noche",
     "description": "Especializada en React y Next.js, construyendo aplicaciones escalables y listas para producción.",
     "viewProjects": "Ver proyectos",
     "resume": "Currículum",
     "availability": "Disponible para trabajo remoto • México",
-    "planetAlt": "Planeta"
+    "planetAlt": "Planeta",
+    "photoAlt": "Jessica Patiño"
   },
   "Skills": {
     "title": "Habilidades",

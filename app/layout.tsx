@@ -68,7 +68,7 @@ export default async function RootLayout({
                             color="#ffffff"
                         />
                         <Navbar />
-                        <main className="flex-1 min-h-screen container mx-auto">
+                        <main className="flex-1 min-h-screen max-w-7xl mx-auto w-full">
                             {children}
                         </main>
                         <Footer />
