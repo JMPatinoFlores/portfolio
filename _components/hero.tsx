@@ -3,7 +3,7 @@
 import { OrbitingCircles } from "@/components/ui/orbiting-circles";
 import { RainbowButton } from "@/components/ui/rainbow-button";
 import { TypingAnimation } from "@/components/ui/typing-animation";
-import { Download, Github, Sparkle } from "lucide-react";
+import { Download, Sparkle } from "lucide-react";
 import { useLocale, useTranslations } from "next-intl";
 import Image from "next/image";
 import Link from "next/link";
@@ -89,18 +89,21 @@ export const Hero = () => {
             <div className="flex flex-col md:grid md:grid-cols-2 md:items-center min-h-[80vh] gap-10">
                 <div className="order-2 md:order-1 flex flex-col items-center md:items-start gap-5">
                     <div className="text-center md:text-left">
-                        <TypingAnimation className="text-base md:text-2xl font-medium">
-                            {t("signature")}
-                        </TypingAnimation>
-                        <h1 className="md:text-8xl text-5xl font-bold text-shadow-[0_5px_25px_rgb(0_0_0/0.25)] text-shadow-white/50">
+                        <div className="flex items-center gap-2">
+                            <span className="relative flex size-3">
+                                <span className="absolute inset-0 rounded-full bg-foreground blur-[3px] animate-star-glow" />
+                                <span className="relative size-3 rounded-full bg-foreground" />
+                            </span>
+                            <TypingAnimation className="text-lg md:text-2xl font-semibold">
+                                {t("signature")}
+                            </TypingAnimation>
+                        </div>
+                        <h1 className="md:text-[5.25rem] text-4xl font-extrabold text-shadow-[0_5px_25px_rgb(0_0_0/0.25)] text-shadow-white/50">
                             {t("title")}
                         </h1>
                     </div>
-                    <p className="md:max-w-lg max-w-xs text-lg md:text-base text-center md:text-left">
+                    <p className="md:max-w-xl max-w-sm text-sm md:text-base text-center md:text-left text-foreground/80">
                         {t("description")}
-                    </p>
-                    <p className="italic text-sm md:text-base text-white/70">
-                        {t("tagline")}
                     </p>
                     <div className="flex gap-5 items-center">
                         <RainbowButton asChild size="lg">

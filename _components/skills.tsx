@@ -1,13 +1,11 @@
 import { skills } from "@/_contstants/skills";
-import { ShineBorder } from "@/components/ui/shine-border";
 import { Sparkle } from "lucide-react";
 import { useTranslations } from "next-intl";
 import Image from "next/image";
+import { SkillConstellation } from "./skill-constellation";
 
 export const Skills = () => {
     const t = useTranslations("Skills");
-    const pawItemClass =
-        "relative pl-8 before:content-[''] before:absolute before:left-0 md:before:top-2 before:top-1 before:w-4 before:h-4 before:bg-[url('/paw.png')] before:bg-contain before:bg-no-repeat";
 
     return (
         <section
@@ -48,21 +46,20 @@ export const Skills = () => {
                     return (
                         <div
                             key={skill.key}
-                            className="border border-white/5 rounded-xl p-5 relative overflow-hidden"
+                            className="flex flex-col rounded-xl p-5 relative overflow-hidden"
                         >
-                            <ShineBorder shineColor={skill.shine} />
-
-                            <h3 className="font-semibold mb-4 text-3xl bg-linear-to-r from-fuchsia-500 via-violet-500 to-blue-600 bg-clip-text text-transparent text-center">
+                            <h3 className="font-semibold mb-4 text-xl text-center text-shadow-[0_0_10px_rgba(37,99,235,0.5)]">
                                 {t(`categories.${skill.key}.title`)}
                             </h3>
 
-                            <ul className="space-y-2">
-                                {items.map((item) => (
-                                    <li key={item} className={pawItemClass}>
-                                        {item}
-                                    </li>
-                                ))}
-                            </ul>
+                            <div className="flex flex-1 items-center justify-center">
+                                <SkillConstellation
+                                    items={items}
+                                    positions={skill.constellation}
+                                    connections={skill.connections}
+                                    flippedLabels={skill.flippedLabels}
+                                />
+                            </div>
                         </div>
                     );
                 })}

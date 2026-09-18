@@ -10,8 +10,7 @@
   "Hero": {
     "signature": "Hello! I'm Jessi",
     "title": "Frontend Developer",
-    "tagline": "Building interfaces after dark",
-    "description": "Specialized in React and Next.js, building scalable and production-ready applications.",
+    "description": "Specialized in React and Next.js, I build scalable, production-ready applications with clean architecture and a strong focus on user experience.",
     "viewProjects": "View Projects",
     "resume": "Resume",
     "availability": "Available for remote work • Mexico",
@@ -20,7 +19,7 @@
   },
   "Skills": {
     "title": "Skills",
-    "description": "Tools of the night shift. Each one chosen carefully, mastered patiently.",
+    "description": "The tools and technologies I rely on every day, chosen carefully and mastered with practice.",
     "catAlt": "Cat",
     "planetAlt": "Planet",
     "categories": {
@@ -30,19 +29,19 @@
       },
       "frameworks": {
         "title": "Frameworks",
-        "items": ["React", "Next.js", "React Native (Expo) — basic", "Express.js"]
+        "items": ["React", "Next.js", "Express.js", "React Hooks", "Context API"]
       },
       "libraries": {
         "title": "Libraries",
-        "items": ["React Hook Form", "Formik", "TanStack Table", "dnd-kit", "Tiptap", "shadcn/ui", "next-intl"]
+        "items": ["React Hook Form", "Formik", "TanStack Table & Query", "dnd-kit", "Tiptap", "shadcn/ui", "next-intl"]
       },
       "uiStyling": {
         "title": "UI & Styling",
-        "items": ["Tailwind CSS", "CSS Modules", "Responsive Design", "Theming (Dark/Light mode)"]
+        "items": ["Tailwind CSS", "CSS Modules", "Responsive Design", "Theming", "Design Systems & Accessibility (a11y)"]
       },
       "tools": {
         "title": "Tools",
-        "items": ["Git & Github", "Figma", "Vercel", "AWS S3", "Supabase", "Render"]
+        "items": ["Git & Github", "Figma", "Vercel", "AWS (S3, CloudFront)", "Supabase", "Node.js", "Agile (Scrum, ClickUp)"]
       },
       "architecture": {
         "title": "Architecture",
@@ -50,16 +49,17 @@
           "Component Architecture",
           "Data Tables & Filtering",
           "REST API Integration",
-          "Authentication (JWT)",
+          "Auth (JWT)",
           "CRUD Operations",
-          "Reusable Component Design"
+          "Reusable UI",
+          "AI-Assisted Development"
         ]
       }
     }
   },
   "Projects": {
     "title": "Projects",
-    "description": "Built while others slept. Each project a small victory against the darkness.",
+    "description": "A selection of projects that reflect how I think, build, and solve real problems.",
     "catAlt": "Cat",
     "planetAlt": "Planet",
     "card": {
@@ -103,7 +103,7 @@
   },
   "Contact": {
     "title": "Contact",
-    "heading": "The night is ending, but I'm always open to new opportunities.",
+    "heading": "Always open to new opportunities and interesting projects.",
     "description": "If you're looking for a frontend developer or have a project in mind, let's talk.",
     "availability": "Available for frontend positions and freelance projects.",
     "getInTouch": "Get in touch",
