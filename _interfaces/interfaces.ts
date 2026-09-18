@@ -6,11 +6,16 @@ export interface ProjectProps {
     repo?: string;
     link?: string;
     image?: string;
+    images?: string[];
 }
 
 export interface TranslatedProjectProps extends ProjectProps {
     title: string;
     description: string;
+    shortDescription: string;
+    stack?: string;
+    architecture?: string;
+    scope?: string;
 }
 
 export interface ToolProps {

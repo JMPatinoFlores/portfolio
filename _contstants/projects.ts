@@ -3,12 +3,14 @@ import {
     Cloud,
     Code,
     Component,
+    Container,
+    Database,
+    DatabaseZap,
+    Github,
     Hexagon,
     Layers,
-    Move,
     Server,
     Terminal,
-    TextCursor,
     Wind,
 } from "lucide-react";
 
@@ -33,24 +35,40 @@ export const projects: ProjectProps[] = [
                 label: "shadcn",
             },
             {
-                icon: Cloud,
-                label: "AWS S3",
-            },
-            {
                 icon: Terminal,
                 label: "Golang",
             },
             {
-                icon: TextCursor,
-                label: "Tiptap",
+                icon: Database,
+                label: "PostgreSQL",
             },
             {
-                icon: Move,
-                label: "Dnd kit",
+                icon: Cloud,
+                label: "AWS",
+            },
+            {
+                icon: Container,
+                label: "Docker",
+            },
+            {
+                icon: Github,
+                label: "Git & GitHub",
             },
         ],
         link: "https://www.meteorcloud.net/",
-        image: "/meteorcloud.png",
+        image: "/projects-screenshots/dashboard-meteorcloud.png",
+        images: [
+            "/projects-screenshots/login-meteorcloud.png",
+            "/projects-screenshots/dashboard-meteorcloud.png",
+            "/projects-screenshots/sidebar-meteorcloud.png",
+            "/projects-screenshots/access-portal-meteorcloud.png",
+            "/projects-screenshots/order-details-meteorcloud.png",
+            "/projects-screenshots/add-form-meteorcloud.png",
+            "/projects-screenshots/import-csv-meteorcloud.png",
+            "/projects-screenshots/custom-fields-meteorcloud.png",
+            "/projects-screenshots/document-editor-meteorcloud.png",
+            "/projects-screenshots/appareance-meteorcloud.png",
+        ],
     },
     {
         key: "galoo",
@@ -72,16 +90,45 @@ export const projects: ProjectProps[] = [
                 label: "shadcn",
             },
             {
-                icon: Cloud,
-                label: "AWS S3",
-            },
-            {
                 icon: Server,
                 label: "Express.js",
             },
+            {
+                icon: Hexagon,
+                label: "TypeORM",
+            },
+            {
+                icon: Database,
+                label: "PostgreSQL",
+            },
+            {
+                icon: DatabaseZap,
+                label: "Supabase",
+            },
+            {
+                icon: Cloud,
+                label: "AWS",
+            },
+            {
+                icon: Github,
+                label: "Git & GitHub",
+            },
         ],
         link: "https://www.galoo.pet/",
-        image: "/vitalpet.png",
+        image: "/projects-screenshots/landing-galoo.png",
+        images: [
+            "/projects-screenshots/landing-galoo.png",
+            "/projects-screenshots/dashboard-galoo.png",
+            "/projects-screenshots/patients-galoo.png",
+            "/projects-screenshots/medical-record-galoo.png",
+            "/projects-screenshots/vaccinations-galoo.png",
+            "/projects-screenshots/add-vaccination-galoo.png",
+            "/projects-screenshots/shedule-galoo.png",
+            "/projects-screenshots/customers-galoo.png",
+            "/projects-screenshots/carnet-galoo.png",
+            "/projects-screenshots/clinics-galoo.png",
+            "/projects-screenshots/settings-galoo.png",
+        ],
     },
     {
         key: "rutaViajera",
@@ -95,16 +142,16 @@ export const projects: ProjectProps[] = [
                 label: "Typescript",
             },
             {
+                icon: Hexagon,
+                label: "Nest.js",
+            },
+            {
                 icon: Wind,
                 label: "TailwindCSS",
             },
             {
                 icon: Cloud,
                 label: "Cloudinary",
-            },
-            {
-                icon: Hexagon,
-                label: "Nest.js",
             },
         ],
         repo: "https://github.com/JMPatinoFlores/PM4FE-JMPatinoFlores",
@@ -122,16 +169,16 @@ export const projects: ProjectProps[] = [
                 label: "Typescript",
             },
             {
+                icon: Server,
+                label: "Express.js",
+            },
+            {
                 icon: Wind,
                 label: "TailwindCSS",
             },
             {
                 icon: Cloud,
                 label: "Cloudinary",
-            },
-            {
-                icon: Server,
-                label: "Express.js",
             },
         ],
         link: "https://trendy-treasures-ec.vercel.app/",

@@ -22,13 +22,6 @@ export const Projects = () => {
                 className="absolute top-60 md:-right-40 right-0 opacity-60 hover:opacity-80 transition transform scale-x-[-1]"
             />
             <Image
-                src="/planet-2.png"
-                alt={t("planetAlt")}
-                width={150}
-                height={150}
-                className="absolute top-180 md:-right-20 right-0 opacity-60 hover:opacity-80 transition duration-500"
-            />
-            <Image
                 src="/planet-4.png"
                 alt={t("planetAlt")}
                 width={150}
@@ -48,19 +41,38 @@ export const Projects = () => {
                 <div className="grow border-t border-white" />
             </div>
             <p className="mb-10">{t("description")}</p>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-5 max-w-7xl mx-auto">
-                {projects.map((project) => (
-                    <ProjectCard
-                        project={{
-                            ...project,
-                            title: t(`items.${project.key}.title`),
-                            description: t(
-                                `items.${project.key}.description`,
-                            ),
-                        }}
-                        key={project.key}
-                    />
-                ))}
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 max-w-7xl mx-auto">
+                {projects.map((project) => {
+                    const stackKey = `items.${project.key}.stack` as const;
+                    const architectureKey =
+                        `items.${project.key}.architecture` as const;
+                    const scopeKey = `items.${project.key}.scope` as const;
+
+                    return (
+                        <ProjectCard
+                            project={{
+                                ...project,
+                                title: t(`items.${project.key}.title`),
+                                description: t(
+                                    `items.${project.key}.description`,
+                                ),
+                                shortDescription: t(
+                                    `items.${project.key}.shortDescription`,
+                                ),
+                                stack: t.has(stackKey)
+                                    ? t(stackKey)
+                                    : undefined,
+                                architecture: t.has(architectureKey)
+                                    ? t(architectureKey)
+                                    : undefined,
+                                scope: t.has(scopeKey)
+                                    ? t(scopeKey)
+                                    : undefined,
+                            }}
+                            key={project.key}
+                        />
+                    );
+                })}
             </div>
         </section>
     );

@@ -98,27 +98,42 @@
         "planetAlt": "Planeta",
         "card": {
             "code": "Código",
-            "live": "Demo"
+            "live": "Demo",
+            "seeMore": "Ver más",
+            "stack": "Stack",
+            "architecture": "Arquitectura",
+            "scope": "Alcance funcional"
         },
         "items": {
             "meteorCloud": {
                 "title": "MeteorCloud",
-                "description": "Desarrollo frontend para un sistema ERP/CRM multi-tenant en producción, utilizado por una empresa de distribución. Implementé tablas de datos complejas, vistas basadas en roles, dashboards con analíticas y flujos CRUD completos. Construido con Next.js y TypeScript, integrando servicios backend escritos en Go."
+                "shortDescription": "Frontend multi-tenant de un ERP para distribuidoras, construido con Next.js 15 y TypeScript, con gestión de inventario, ventas, compras y contabilidad.",
+                "description": "Frontend de un ERP multi-tenant para distribuidoras (contabilidad, inventario, órdenes de venta/compra, almacenes, reportes, gestión de usuarios y permisos).",
+                "stack": "Next.js 15 (App Router) + React 19 + TypeScript, TailwindCSS v4 + shadcn/ui (Radix), SWR para data fetching, React Hook Form + Zod para formularios, @tanstack/react-table para tablas de datos, next-intl para i18n (inglés/español), TipTap para edición de texto enriquecido, dnd-kit para drag & drop, Recharts para reportes gráficos, jsPDF para exportación a PDF.",
+                "architecture": "Cliente puro de una API REST externa en Golang con base de datos en PostgreSQL. Sistema de autenticación en dos capas (token de sesión global + token de acceso por tenant), gating de rutas y permisos granulares por recurso/acción, y un patrón consistente de \"servicio → schema/tipo → hook → componente\" replicado en más de 30 entidades CRUD. Control de versiones con Git y GitHub, trabajando bajo una metodología ágil (Scrum).",
+                "scope": "Más de 15 módulos operativos (contabilidad, inventario, ventas, compras, transferencias de stock, datos maestros, reportes, usuarios/roles, configuración), con importación/exportación CSV, campos personalizados por tenant, feed de actividad/auditoría y soporte multi-idioma."
             },
             "galoo": {
                 "title": "Galoo",
-                "description": "Plataforma full-stack de gestión veterinaria con arquitectura multi-tenant, control estricto de roles, agendamiento de citas, recordatorios por WhatsApp y carnet digital público para mascotas. Construida con Next.js, Express y AWS S3, respaldada por una suite de más de 100 pruebas automatizadas que garantizan la estabilidad del sistema y el aislamiento de datos por tenant."
+                "shortDescription": "SaaS multi-tenant de gestión clínica veterinaria, construido con Next.js 16 + Express/TypeORM, con expediente médico, agenda de citas y carnet digital para mascotas.",
+                "description": "SaaS multi-tenant de gestión clínica veterinaria: expediente médico completo, agenda de citas, comunicación con clientes vía carnet digital y administración de clínicas y personal.",
+                "stack": "Next.js 16 (App Router) + React 19 + TypeScript, TailwindCSS v4 + shadcn/ui (Radix), React Hook Form + Zod para formularios, react-big-calendar para agenda y Sonner para notificaciones UI. Backend propio en Express + TypeScript + TypeORM (PostgreSQL en Supabase), autenticación JWT vía cookie httpOnly, AWS S3 para archivos médicos, y notificaciones push (Web Push/PWA) con cron interno para recordatorios.",
+                "architecture": "Monorepo con backend y frontend independientes; el frontend consume la API a través de un proxy same-origin (mantiene la cookie de sesión first-party, sin tokens expuestos al cliente). Backend en capas (routes → controllers → services → repositorios TypeORM) con multi-tenancy real (aislamiento por clínica, roles y superadmin), modelo de datos polimórfico para seguimientos clínicos (checkups anidados bajo consulta, cirugía u hospitalización), y un sistema de feature-gating por clínica preparado para 6 módulos premium (inventario, hospitalización avanzada, grooming, laboratorio, administración avanzada y multi-sucursal).",
+                "scope": "Más de 15 áreas operativas: pacientes, clientes, agenda/citas, medicina preventiva (vacunación, desparasitación, antipulgas/garrapatas, cada una con su propio catálogo de producto), consultas generales, cirugías, hospitalización con monitoreo de signos vitales, nutrición (catálogo de alimentos y evaluación nutricional), archivos médicos, recordatorios y notificaciones (incluye push/PWA), carnet digital público por token, gestión de personal y roles, y administración multi-clínica."
             },
             "rutaViajera": {
                 "title": "Ruta Viajera",
+                "shortDescription": "App de reservación de hoteles con autenticación, reservas y mapas interactivos.",
                 "description": "Plataforma de reservación de hoteles con autenticación de usuarios, reservas y mapas interactivos que muestran rutas de viaje y atracciones cercanas. Desarrollé el frontend con Next.js, integrándolo con una API backend existente, enfocándome en la experiencia de usuario y en interfaces dinámicas."
             },
             "trendyTreasures": {
                 "title": "Trendy Treasures",
+                "shortDescription": "Frontend de e-commerce con carrito, wishlist y autenticación. Enfocado en manejo de estado.",
                 "description": "Frontend de e-commerce con navegación de productos, autenticación, carrito de compras y lista de deseos. Construido con Next.js y TailwindCSS, enfocado en el manejo de estado y una interfaz responsiva."
             },
             "jyWebStudio": {
                 "title": "J&Y Web Studio",
+                "shortDescription": "Sitio de negocio con pagos vía Stripe y automatización de contacto con EmailJS.",
                 "description": "Sitio web de negocio creado para ofrecer servicios de landing pages a pequeñas y medianas empresas. Integré Stripe para pagos y EmailJS para automatizar el contacto, enfocándome en un diseño responsivo y una experiencia de usuario moderna."
             }
         }
