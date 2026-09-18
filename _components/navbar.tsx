@@ -8,27 +8,31 @@ import {
 } from "@/components/ui/popover";
 import { cn } from "@/lib/utils";
 import { Code, Folder, Home, IdCard, Mail } from "lucide-react";
+import { useTranslations } from "next-intl";
 import Link from "next/link";
+import { LocaleSwitcher } from "./locale-switcher";
 
 export const Navbar = () => {
+    const t = useTranslations("Nav");
+
     const navLinks = [
         {
-            label: "Home",
+            label: t("home"),
             link: "#",
             icon: Home,
         },
         {
-            label: "Skills",
+            label: t("skills"),
             link: "#skills",
             icon: Code,
         },
         {
-            label: "Projects",
+            label: t("projects"),
             link: "#projects",
             icon: Folder,
         },
         {
-            label: "About",
+            label: t("about"),
             link: "#about",
             icon: IdCard,
         },
@@ -80,6 +84,9 @@ export const Navbar = () => {
                                 <Link href={link.link}>{link.label}</Link>
                             </li>
                         ))}
+                        <li>
+                            <LocaleSwitcher />
+                        </li>
                     </ul>
                 </PopoverContent>
             </Popover>
@@ -150,8 +157,12 @@ export const Navbar = () => {
                                 "after:animate-rainbow",
                             )}
                         >
-                            <Mail className="size-4" /> Contact
+                            <Mail className="size-4" /> {t("contact")}
                         </Link>
+                    </li>
+                    <div className="w-px h-4 bg-white/20 mx-2" />
+                    <li className="flex items-center">
+                        <LocaleSwitcher />
                     </li>
                 </ul>
             </div>

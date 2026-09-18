@@ -1,0 +1,120 @@
+{
+  "Nav": {
+    "home": "Inicio",
+    "skills": "Habilidades",
+    "projects": "Proyectos",
+    "about": "Sobre mí",
+    "contact": "Contacto"
+  },
+  "Hero": {
+    "signature": "// Jessica Patiño",
+    "title": "Desarrolladora Frontend",
+    "tagline": "Construyendo interfaces cuando cae la noche",
+    "description": "Especializada en React y Next.js, construyendo aplicaciones escalables y listas para producción.",
+    "viewProjects": "Ver proyectos",
+    "resume": "Currículum",
+    "availability": "Disponible para trabajo remoto • México",
+    "planetAlt": "Planeta"
+  },
+  "Skills": {
+    "title": "Habilidades",
+    "description": "Herramientas del turno nocturno. Cada una elegida con cuidado, dominada con paciencia.",
+    "catAlt": "Gato",
+    "planetAlt": "Planeta",
+    "categories": {
+      "coreLanguages": {
+        "title": "Lenguajes principales",
+        "items": ["Typescript", "Javascript (ES6+)", "HTML5", "CSS3", "SQL (PostgreSQL)"]
+      },
+      "frameworks": {
+        "title": "Frameworks",
+        "items": ["React", "Next.js", "React Native (Expo) — básico", "Express.js"]
+      },
+      "libraries": {
+        "title": "Librerías",
+        "items": ["React Hook Form", "Formik", "TanStack Table", "dnd-kit", "Tiptap", "shadcn/ui", "next-intl"]
+      },
+      "uiStyling": {
+        "title": "UI y estilos",
+        "items": ["Tailwind CSS", "CSS Modules", "Diseño responsivo", "Theming (modo claro/oscuro)"]
+      },
+      "tools": {
+        "title": "Herramientas",
+        "items": ["Git & Github", "Figma", "Vercel", "AWS S3", "Supabase", "Render"]
+      },
+      "architecture": {
+        "title": "Arquitectura",
+        "items": [
+          "Arquitectura de componentes",
+          "Tablas de datos y filtrado",
+          "Integración de APIs REST",
+          "Autenticación (JWT)",
+          "Operaciones CRUD",
+          "Diseño de componentes reutilizables"
+        ]
+      }
+    }
+  },
+  "Projects": {
+    "title": "Proyectos",
+    "description": "Construidos mientras otros dormían. Cada proyecto, una pequeña victoria contra la oscuridad.",
+    "catAlt": "Gato",
+    "planetAlt": "Planeta",
+    "card": {
+      "code": "Código",
+      "live": "Demo"
+    },
+    "items": {
+      "meteorCloud": {
+        "title": "MeteorCloud",
+        "description": "Desarrollo frontend para un sistema ERP/CRM multi-tenant en producción, utilizado por una empresa de distribución. Implementé tablas de datos complejas, vistas basadas en roles, dashboards con analíticas y flujos CRUD completos. Construido con Next.js y TypeScript, integrando servicios backend escritos en Go."
+      },
+      "vitalPet": {
+        "title": "VitalPet",
+        "description": "Sistema full-stack de gestión veterinaria con acceso basado en roles, agendamiento de citas y expedientes médicos. Desarrollado con Next.js, Express y AWS S3, enfocado en una arquitectura frontend escalable y patrones de aplicación reales."
+      },
+      "rutaViajera": {
+        "title": "Ruta Viajera",
+        "description": "Plataforma de reservación de hoteles con autenticación de usuarios, reservas y mapas interactivos que muestran rutas de viaje y atracciones cercanas. Desarrollé el frontend con Next.js, integrándolo con una API backend existente, enfocándome en la experiencia de usuario y en interfaces dinámicas."
+      },
+      "trendyTreasures": {
+        "title": "Trendy Treasures",
+        "description": "Frontend de e-commerce con navegación de productos, autenticación, carrito de compras y lista de deseos. Construido con Next.js y TailwindCSS, enfocado en el manejo de estado y una interfaz responsiva."
+      },
+      "jyWebStudio": {
+        "title": "J&Y Web Studio",
+        "description": "Sitio web de negocio creado para ofrecer servicios de landing pages a pequeñas y medianas empresas. Integré Stripe para pagos y EmailJS para automatizar el contacto, enfocándome en un diseño responsivo y una experiencia de usuario moderna."
+      }
+    }
+  },
+  "About": {
+    "title": "Sobre mí",
+    "paragraph1": "Soy desarrolladora frontend especializada en construir aplicaciones web modernas y escalables usando React y Next.js. Tengo experiencia trabajando en sistemas en producción, incluyendo plataformas ERP/CRM, aplicaciones de reservación y dashboards de gestión con flujos basados en roles.",
+    "paragraph2": "Me interesa especialmente el lado de experiencia de usuario del desarrollo frontend. Al construir funcionalidades, no solo me enfoco en la implementación, sino también en la usabilidad, los flujos de usuario y en que las interfaces se sientan claras e intuitivas.",
+    "paragraph3": "Disfruto crear arquitecturas limpias y mantenibles, trabajar con APIs de backend, y mejorar continuamente la calidad y confiabilidad de las aplicaciones que construyo.",
+    "highlight1": "Desarrollo de funcionalidades centrado en el usuario",
+    "highlight2": "Arquitectura de componentes escalable",
+    "highlight3": "Código limpio y mantenible",
+    "highlight4": "Aprendizaje continuo",
+    "pawAlt": "Huella",
+    "catAlt": "Gato"
+  },
+  "Contact": {
+    "title": "Contacto",
+    "heading": "La noche está terminando, pero siempre estoy abierta a nuevas oportunidades.",
+    "description": "Si buscas una desarrolladora frontend o tienes un proyecto en mente, hablemos.",
+    "availability": "Disponible para puestos frontend y proyectos freelance.",
+    "getInTouch": "Ponte en contacto",
+    "catAlt": "Gato"
+  },
+  "Footer": {
+    "copyright": "© 2026 Hecho con 🩷 por JessiOwe",
+    "illustrations": "Ilustraciones por LessGalaxy"
+  },
+  "Metadata": {
+    "title": "Jessica Patiño | Desarrolladora Frontend",
+    "description": "Desarrolladora Frontend especializada en React, Next.js y TypeScript. Portafolio con dashboards, plataformas de reservación e interfaces modernas.",
+    "ogDescription": "Desarrolladora Frontend especializada en aplicaciones web modernas usando React y Next.js.",
+    "siteName": "Portafolio de Jessica Patiño"
+  }
+}

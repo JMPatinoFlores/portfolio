@@ -1,12 +1,18 @@
 "use client";
 
-import { ProjectProps } from "@/_interfaces/interfaces";
+import { TranslatedProjectProps } from "@/_interfaces/interfaces";
 import { Github, LinkIcon } from "lucide-react";
+import { useTranslations } from "next-intl";
 import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
 
-export const ProjectCard = ({ project }: { project: ProjectProps }) => {
+export const ProjectCard = ({
+    project,
+}: {
+    project: TranslatedProjectProps;
+}) => {
+    const t = useTranslations("Projects.card");
     const [imgSrc, setImgSrc] = useState(
         project.image || "/image-placeholder-2.png",
     );
@@ -49,7 +55,8 @@ export const ProjectCard = ({ project }: { project: ProjectProps }) => {
                             href={project.repo}
                             className="w-full border border-white md:text-lg flex items-center justify-center rounded-lg md:py-2 py-1 gap-2 hover:bg-white/5 transition-colors"
                         >
-                            <Github className="size-4 md:size-5" /> Code
+                            <Github className="size-4 md:size-5" />{" "}
+                            {t("code")}
                         </Link>
                     )}
                     {project.link && (
@@ -59,7 +66,8 @@ export const ProjectCard = ({ project }: { project: ProjectProps }) => {
                             href={project.link}
                             className="w-full border border-white md:text-lg flex items-center justify-center rounded-lg md:py-2 py-1 gap-2 hover:bg-white/5 transition-colors"
                         >
-                            <LinkIcon className="size-4 md:size-5" /> Live
+                            <LinkIcon className="size-4 md:size-5" />{" "}
+                            {t("live")}
                         </Link>
                     )}
                 </div>

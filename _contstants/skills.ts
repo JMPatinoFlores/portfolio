@@ -1,70 +1,26 @@
 export const skills = [
     {
-        title: "Core Languages",
+        key: "coreLanguages",
         shine: ["#ff42f9", "#9040ff", "#4284ff"],
-        items: [
-            "Typescript",
-            "Javascript (ES6+)",
-            "HTML5",
-            "CSS3",
-            "SQL (PostgreSQL)",
-        ],
     },
     {
-        title: "Frameworks",
+        key: "frameworks",
         shine: ["#7B2FF7", "#2D9CDB", "#00E0FF"],
-        items: [
-            "React",
-            "Next.js",
-            "React Native (Expo) — basic",
-            "Express.js",
-        ],
     },
     {
-        title: "Libraries",
+        key: "libraries",
         shine: ["#7B2FF7", "#2D9CDB", "#00E0FF"],
-        items: [
-            "React Hook Form",
-            "Formik",
-            "TanStack Table",
-            "dnd-kit",
-            "Tiptap",
-            "shadcn/ui",
-            "next-intl",
-        ],
     },
     {
-        title: "UI & Styling",
+        key: "uiStyling",
         shine: ["#7B2FF7", "#2D9CDB", "#00E0FF"],
-        items: [
-            "Tailwind CSS",
-            "CSS Modules",
-            "Responsive Design",
-            "Theming (Dark/Light mode)",
-        ],
     },
     {
-        title: "Tools",
+        key: "tools",
         shine: ["#7B2FF7", "#2D9CDB", "#00E0FF"],
-        items: [
-            "Git & Github",
-            "Figma",
-            "Vercel",
-            "AWS S3",
-            "Supabase",
-            "Render",
-        ],
     },
     {
-        title: "Architecture",
+        key: "architecture",
         shine: ["#7B2FF7", "#2D9CDB", "#00E0FF"],
-        items: [
-            "Component Architecture",
-            "Data Tables & Filtering",
-            "REST API Integration",
-            "Authentication (JWT)",
-            "CRUD Operations",
-            "Reusable Component Design",
-        ],
     },
 ];

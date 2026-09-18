@@ -14,9 +14,7 @@ import {
 
 export const projects: ProjectProps[] = [
     {
-        title: "MeteorCloud",
-        description:
-            "Frontend development for a production multi-tenant ERP/CRM system used in production by a distribution company. Implemented complex data tables, role-based views, dashboards with analytics, and full CRUD workflows. Built with Next.js and TypeScript, integrating with backend services written in Go.",
+        key: "meteorCloud",
         tools: [
             {
                 icon: Layers,
@@ -55,9 +53,7 @@ export const projects: ProjectProps[] = [
         image: "/meteorcloud.png",
     },
     {
-        title: "VitalPet",
-        description:
-            "Full-stack veterinary management system with role-based access, appointment scheduling, and medical records. Developed using Next.js, Express, and AWS S3, focusing on scalable frontend architecture and real-world application patterns.",
+        key: "vitalPet",
         tools: [
             {
                 icon: Layers,
@@ -89,9 +85,7 @@ export const projects: ProjectProps[] = [
         image: "/vitalpet.png",
     },
     {
-        title: "Ruta Viajera",
-        description:
-            "Hotel booking platform with user authentication, reservations, and interactive maps showing travel routes and nearby attractions. Developed the frontend using Next.js and integrated with an existing backend API, focusing on user experience and dynamic interfaces.",
+        key: "rutaViajera",
         tools: [
             {
                 icon: Layers,
@@ -119,9 +113,7 @@ export const projects: ProjectProps[] = [
         image: "/rutaviajera.png",
     },
     {
-        title: "Trendy Treasures",
-        description:
-            "E-commerce frontend featuring product browsing, authentication, shopping cart, and wishlist functionality. Built with Next.js and TailwindCSS, focusing on state management and responsive UI.",
+        key: "trendyTreasures",
         tools: [
             {
                 icon: Layers,
@@ -149,9 +141,7 @@ export const projects: ProjectProps[] = [
         image: "/trendytreasures.png",
     },
     {
-        title: "J&Y Web Studio",
-        description:
-            "Business website created to offer landing page services for small and medium-sized companies. Integrated Stripe for payments and EmailJS for contact automation, focusing on responsive design and modern user experience.",
+        key: "jyWebStudio",
         tools: [
             {
                 icon: Layers,

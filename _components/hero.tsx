@@ -1,10 +1,13 @@
 import { RainbowButton } from "@/components/ui/rainbow-button";
 import { TypingAnimation } from "@/components/ui/typing-animation";
 import { Download, Github, Sparkle } from "lucide-react";
+import { useTranslations } from "next-intl";
 import Image from "next/image";
 import Link from "next/link";
 
 export const Hero = () => {
+    const t = useTranslations("Hero");
+
     return (
         <section
             className="relative mt-16 py-5 md:scroll-mt-16 scroll-mt-12 text-xl p-5"
@@ -12,7 +15,7 @@ export const Hero = () => {
         >
             <Image
                 src="/planet-1.png"
-                alt="Planet"
+                alt={t("planetAlt")}
                 width={300}
                 height={300}
                 className="absolute md:top-10 -top-30 md:-left-50 left-0 opacity-60 hover:opacity-80 transition"
@@ -21,7 +24,7 @@ export const Hero = () => {
             <Sparkle className="absolute bottom-40 left-15 opacity-20 hover:opacity-40 transition" />
             <Image
                 src="/planet-2.png"
-                alt="Planet"
+                alt={t("planetAlt")}
                 width={50}
                 height={50}
                 className="absolute bottom-50 right-10 -z-10 opacity-60 hover:opacity-80 transition"
@@ -36,31 +39,28 @@ export const Hero = () => {
             <div className="flex flex-col items-center justify-center min-h-[80vh] gap-5">
                 <div className="text-center">
                     <TypingAnimation className="text-sm md:text-base">
-                        {"// Jessica Patiño"}
+                        {t("signature")}
                     </TypingAnimation>
                     <h1 className="md:text-8xl text-5xl font-bold text-shadow-[0_5px_25px_rgb(0_0_0/0.25)] text-shadow-white/50">
-                        Frontend Developer
+                        {t("title")}
                     </h1>
                 </div>
-                <p className="italic text-sm md:text-base">
-                    Building interfaces after dark
-                </p>
+                <p className="italic text-sm md:text-base">{t("tagline")}</p>
                 <p className="md:max-w-lg max-w-xs text-lg md:text-base text-center">
-                    Specialized in React and Next.js, building scalable and
-                    production-ready applications.
+                    {t("description")}
                 </p>
                 <div className="flex gap-5 items-center">
                     <RainbowButton asChild size="lg">
-                        <Link href="#projects">View Projects</Link>
+                        <Link href="#projects">{t("viewProjects")}</Link>
                     </RainbowButton>
                     <RainbowButton asChild variant="outline" size="lg">
                         <Link href="https://github.com/JMPatinoFlores/">
-                            Resume <Download />
+                            {t("resume")} <Download />
                         </Link>
                     </RainbowButton>
                 </div>
                 <p className="text-sm text-white/70 mt-4">
-                    Available for remote work • Mexico
+                    {t("availability")}
                 </p>
             </div>
         </section>

@@ -1,0 +1,120 @@
+{
+  "Nav": {
+    "home": "Home",
+    "skills": "Skills",
+    "projects": "Projects",
+    "about": "About",
+    "contact": "Contact"
+  },
+  "Hero": {
+    "signature": "// Jessica Patiño",
+    "title": "Frontend Developer",
+    "tagline": "Building interfaces after dark",
+    "description": "Specialized in React and Next.js, building scalable and production-ready applications.",
+    "viewProjects": "View Projects",
+    "resume": "Resume",
+    "availability": "Available for remote work • Mexico",
+    "planetAlt": "Planet"
+  },
+  "Skills": {
+    "title": "Skills",
+    "description": "Tools of the night shift. Each one chosen carefully, mastered patiently.",
+    "catAlt": "Cat",
+    "planetAlt": "Planet",
+    "categories": {
+      "coreLanguages": {
+        "title": "Core Languages",
+        "items": ["Typescript", "Javascript (ES6+)", "HTML5", "CSS3", "SQL (PostgreSQL)"]
+      },
+      "frameworks": {
+        "title": "Frameworks",
+        "items": ["React", "Next.js", "React Native (Expo) — basic", "Express.js"]
+      },
+      "libraries": {
+        "title": "Libraries",
+        "items": ["React Hook Form", "Formik", "TanStack Table", "dnd-kit", "Tiptap", "shadcn/ui", "next-intl"]
+      },
+      "uiStyling": {
+        "title": "UI & Styling",
+        "items": ["Tailwind CSS", "CSS Modules", "Responsive Design", "Theming (Dark/Light mode)"]
+      },
+      "tools": {
+        "title": "Tools",
+        "items": ["Git & Github", "Figma", "Vercel", "AWS S3", "Supabase", "Render"]
+      },
+      "architecture": {
+        "title": "Architecture",
+        "items": [
+          "Component Architecture",
+          "Data Tables & Filtering",
+          "REST API Integration",
+          "Authentication (JWT)",
+          "CRUD Operations",
+          "Reusable Component Design"
+        ]
+      }
+    }
+  },
+  "Projects": {
+    "title": "Projects",
+    "description": "Built while others slept. Each project a small victory against the darkness.",
+    "catAlt": "Cat",
+    "planetAlt": "Planet",
+    "card": {
+      "code": "Code",
+      "live": "Live"
+    },
+    "items": {
+      "meteorCloud": {
+        "title": "MeteorCloud",
+        "description": "Frontend development for a production multi-tenant ERP/CRM system used in production by a distribution company. Implemented complex data tables, role-based views, dashboards with analytics, and full CRUD workflows. Built with Next.js and TypeScript, integrating with backend services written in Go."
+      },
+      "vitalPet": {
+        "title": "VitalPet",
+        "description": "Full-stack veterinary management system with role-based access, appointment scheduling, and medical records. Developed using Next.js, Express, and AWS S3, focusing on scalable frontend architecture and real-world application patterns."
+      },
+      "rutaViajera": {
+        "title": "Ruta Viajera",
+        "description": "Hotel booking platform with user authentication, reservations, and interactive maps showing travel routes and nearby attractions. Developed the frontend using Next.js and integrated with an existing backend API, focusing on user experience and dynamic interfaces."
+      },
+      "trendyTreasures": {
+        "title": "Trendy Treasures",
+        "description": "E-commerce frontend featuring product browsing, authentication, shopping cart, and wishlist functionality. Built with Next.js and TailwindCSS, focusing on state management and responsive UI."
+      },
+      "jyWebStudio": {
+        "title": "J&Y Web Studio",
+        "description": "Business website created to offer landing page services for small and medium-sized companies. Integrated Stripe for payments and EmailJS for contact automation, focusing on responsive design and modern user experience."
+      }
+    }
+  },
+  "About": {
+    "title": "About",
+    "paragraph1": "I'm a frontend developer specialized in building modern, scalable web applications using React and Next.js. I have experience working on production systems including ERP/CRM platforms, booking applications, and management dashboards with role-based workflows.",
+    "paragraph2": "I'm especially interested in the user experience side of frontend development. When building features, I focus not only on implementation but also on usability, user flows, and how interfaces can feel clear and intuitive.",
+    "paragraph3": "I enjoy creating clean, maintainable architectures, working with backend APIs, and continuously improving the quality and reliability of the applications I build.",
+    "highlight1": "User-focused feature development",
+    "highlight2": "Scalable component architecture",
+    "highlight3": "Clean and maintainable code",
+    "highlight4": "Continuous learning",
+    "pawAlt": "Paw",
+    "catAlt": "Cat"
+  },
+  "Contact": {
+    "title": "Contact",
+    "heading": "The night is ending, but I'm always open to new opportunities.",
+    "description": "If you're looking for a frontend developer or have a project in mind, let's talk.",
+    "availability": "Available for frontend positions and freelance projects.",
+    "getInTouch": "Get in touch",
+    "catAlt": "Cat"
+  },
+  "Footer": {
+    "copyright": "© 2026 Made with 🩷 by JessiOwe",
+    "illustrations": "Illustrations by LessGalaxy"
+  },
+  "Metadata": {
+    "title": "Jessica Patiño | Frontend Developer",
+    "description": "Frontend Developer specialized in React, Next.js and TypeScript. Portfolio featuring dashboards, booking platforms and modern user interfaces.",
+    "ogDescription": "Frontend Developer specialized in modern web applications using React and Next.js.",
+    "siteName": "Jessica Patiño Portfolio"
+  }
+}
