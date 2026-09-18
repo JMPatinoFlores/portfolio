@@ -135,6 +135,9 @@ export const Navbar = () => {
                     })}
                     <div className="w-px h-4 bg-white/20 mx-2" />
                     <li className="flex items-center">
+                        <LocaleSwitcher />
+                    </li>
+                    <li className="flex items-center">
                         <Link
                             href="#contact"
                             className={cn(
@@ -159,10 +162,6 @@ export const Navbar = () => {
                         >
                             <Mail className="size-4" /> {t("contact")}
                         </Link>
-                    </li>
-                    <div className="w-px h-4 bg-white/20 mx-2" />
-                    <li className="flex items-center">
-                        <LocaleSwitcher />
                     </li>
                 </ul>
             </div>

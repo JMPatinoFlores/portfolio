@@ -24,6 +24,7 @@ export const ProjectCard = ({
                     src={imgSrc}
                     alt={project.title}
                     fill
+                    sizes="(min-width: 768px) 50vw, 100vw"
                     onError={() => setImgSrc("/image-placeholder-2.png")}
                     className="object-cover transition-transform duration-700 group-hover:scale-110"
                 />

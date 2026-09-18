@@ -25,9 +25,9 @@ export const LocaleSwitcher = () => {
         <Button
             onClick={handleClick}
             disabled={isPending}
-            size="sm"
+            size="icon-sm"
             variant="ghost"
-            className="uppercase text-xs font-medium"
+            className="uppercase text-xs font-medium rounded-full"
             aria-label={`Switch to ${nextLocale === "es" ? "Spanish" : "English"}`}
         >
             {nextLocale}
